@@ -5,8 +5,12 @@
 }
 /* praimary  */
 .praimerCol{
-  color: #3A3A3A;
+  color: rgba(170, 170, 170, 1);
 }
+
+/* .praimerBgCol{
+  background-color: #aaaaaa;
+} */
 
 .praimerBTN{
   color: #ffffff;
@@ -126,6 +130,76 @@ header, main{
 
 /* main start style  */
 
+/* Popular Section start   */
+.popularSec{
+  margin-top: 100px;
+  padding-bottom: 50px;
+}
+.popularSec h2{
+  font-size: 1.75rem;
+  color: #3A3A3A;
+  text-align: center;
+  margin-bottom: 30px;
+}
 
+.populCards{
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  row-gap: 30px;
+}
 
+.card{
+  background-color:#ffffff;
+  width: 330px;
+  padding: 15px;
+  border-radius: 5px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
 
+.cardImg{
+  width: 300px;
+  border-radius: 5px;
+  margin-bottom: 16px;
+}
+
+.card h3{
+  font-size: 1.75rem;
+  width: 400;
+  color: #18191F;
+  margin-bottom: 16px;
+}
+.card h5{
+  font-size: 1.5rem;
+  color: rgba(0, 0, 0, 0.87);
+  margin-bottom: 16px;
+}
+
+.rating p {
+  font-size: 0.87rem;
+  color: #5E6366;
+  margin-left: 10px;
+}
+
+.cardP{  
+  margin-top: 16px;
+  font-size: 0.87rem;
+  color: #5E6366;
+  width: 190px;
+}
+.popularBTN{
+  color: #E02C6D;
+  border: none;
+  margin-top: 10px;
+  background-color: none;
+}
+.btn{
+  flex-direction: column-reverse;
+}
+
+  /* responsive main  */
+  @media screen and (max-width:576px) {
+    .populCards {
+      grid-template-columns: repeat(1, 1fr);
+      justify-items: center;
+    }
+  }
